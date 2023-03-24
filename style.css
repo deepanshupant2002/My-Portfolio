@@ -453,7 +453,6 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
-    /* width: 30rem; */
 }
 .exp .carousel .card:hover{
     background: crimson;
