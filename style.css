@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .exp, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -266,8 +266,19 @@ section .title::after{
     color:rgb(0, 0, 0);
     background: rgb(252, 252, 252);
 }
+
+.exp{
+    color: #fff;
+    background: #111;
+}
+
 .services .title::before,
 .teams .title::before{
+    background: #111;
+}
+
+.services .title::before,
+.exp .title::before{
     background: #fff;
 }
 /* .services .title::after,
@@ -432,6 +443,56 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+
+.exp .carousel .card{
+    height:28rem;
+    background: #FAF9F6;
+    color: #111;
+    border-radius: 16px;
+    padding: 25px 35px ;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    /* width: 30rem; */
+}
+.exp .carousel .card:hover{
+    background: crimson;
+}
+
+.exp .carousel .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}
+.exp .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+}
+.exp .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.exp .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.exp .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.exp .carousel .card:hover img{
+    border-color: #fff;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -550,15 +611,16 @@ section .title::after{
   background: none;
 }
 .contact{
-    background: #111;
-    color : #fff;
+    /* background: #111; */
+    background: #fff;
+    color : #111;
 }
 
 /* footer section styling */
 footer{
-    background: #fff;
+    background: #111;
     padding: 15px 23px;
-    color: #111;
+    color: #fff;
     text-align: center;
 }
 footer span a{
