@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Data Analyst", "Data Scientist", "Software Developer"],
+        strings: ["Software Engineer", "Backend Developer", "Software Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
