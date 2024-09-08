@@ -38,6 +38,7 @@ section{
 .about, .services, .skills, .teams, .exp, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -77,6 +78,16 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+.contact .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: transparent;
+    transform: translateX(-50%);
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -405,7 +416,7 @@ section .title::after{
     /* content: "who with me"; */
 /* } */
 .teams .carousel .card{
-    height:25rem;
+    min-height:25rem;
     background: rgb(32, 32, 31);
     color: #fff;
     border-radius: 6px;
@@ -548,7 +559,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: rgb(122, 119, 119);
+    color: rgb(190, 187, 187);
 }
 .contact .right form .fields{
     display: flex;
@@ -611,15 +622,15 @@ section .title::after{
 }
 .contact{
     /* background: #111; */
-    background: #fff;
-    color : #111;
+    background: #111;
+    color : #fff;
 }
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #fff;
     padding: 15px 23px;
-    color: #fff;
+    color: #111;
     text-align: center;
 }
 footer span a{

@@ -35,14 +35,14 @@ $(document).ready(function () {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Backend Developer", "Software Developer"],
+        strings: ["Solution Consultant", "Presales Consultant"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Software Engineer", "Backend Developer", "Software Developer"],
+        strings: ["Solution Consultant", "Presales Consultant"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -78,23 +78,25 @@ $(document).ready(function () {
 // <script type="text/javascript">
 (function () {
     // https://dashboard.emailjs.com/admin/integration
-    emailjs.init("IKSq6Oh0lQvzciDnw");
+    emailjs.init("e6WoXXcQoyVHNFq4P");
 })();
 // </script>
 // <script type="text/javascript">
 window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        // generate a five digit number for the contact_number variable
-        // this.contact_number.value = Math.random() * 100000 | 0;
-        // these IDs from the previous steps
         emailjs.sendForm('service_rxsdofo', 'template_ju2yti9', this)
             .then(function () {
                 console.log('SUCCESS!');
             }, function (error) {
                 console.log('FAILED...', error);
             });
-        console.log(event);
+        //console.log(event);
+        document.getElementById('name').value = "";
+        document.getElementById('em').value = "";
+        document.getElementById('body').value = "";
+        document.getElementById('subject').value = "";
     });
+    
 }
     // </script>
